@@ -1,0 +1,868 @@
+@charset "UTF-8";
+
+/* 共通部分------------------------------------------- */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-size: 24px;
+    min-height: 100vh;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+br {
+    display: block;
+    content: "";
+}
+    
+.side-footer {
+    margin-top: auto;
+    height: 300px;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+a, p, div, aside {
+    color: white;
+}
+
+/* a:hover {
+    color: #f6bf00;
+} */
+
+
+/* 大きな画像背景 ------------------------------------ */
+.big-bg {
+    width: 100%;
+    height: 960px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#home {
+    background-image: url(room.png);
+}
+
+
+/* HEADER------------------------------------------- */
+header {
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 8px;
+    background: linear-gradient(to bottom, rgba(77, 77, 77, 1), rgba(33, 33, 33, 0.3)) ;
+    /* background: #212121 ; */
+    float: left;
+    box-shadow: 2px 2px 4px -2px #212121;
+    display: flex;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+}
+
+.header-menu {
+    display: flex;
+    text-align: center;
+    margin-right: 48px;
+    margin-left: auto;
+}
+
+.header-list {
+    font-size: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.header-text {
+    text-shadow: 1px 2px 3px rgb(33, 33, 33, 0.9);
+}
+
+.header-text:hover {
+    color: #0411FF;
+}
+
+.header-sub {
+    font-size: 10px;
+}
+
+/* .hamburger {
+    display: none;
+    box-shadow: 2px 2px 4px -2px #212121;
+} */
+
+.drawer {
+    display: none;
+}
+
+/* primary -------------------------------------------- */
+.primary {
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f6bf00;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 155px;
+    box-shadow: 8px 8px 16px -2px #212121;
+    /* flex: 1; */
+}
+.primary-title {
+    margin-top: 100px;
+    text-shadow: 1px 2px 3px rgb(182, 182, 182);
+}
+
+.primary-text {
+    text-align: center;
+    margin-top: 72px;
+    text-shadow: 0.5px 1px 1.5px rgb(182, 182, 182);
+}
+
+.primary-link {
+    text-align: center;
+}
+
+.to-prospect {
+    margin-top: 30px;
+    color: white;
+    text-shadow: 0.5px 1px 1.5px rgba(182, 182, 182);
+}
+
+.to-prospect:hover {
+    color: #0411FF;
+    }
+
+.primary-button-area {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.primary-button {
+    height: auto;
+    width: auto;
+    margin-top: 32px;
+    background-color: #0411FF;
+    border-radius:15px;
+    padding: 8px;
+    box-shadow: 2px 2px 4px -2px #212121;
+}
+
+.primary-button:hover {
+    background-color: #FB1800;
+}
+
+
+
+/*  secondary-------------------------------------- */
+.secondary {
+    width: 100%;
+    height: auto;
+    background-color: #f6bf00;
+}
+
+.secondary-area{
+    width: 65%;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-width: 600px; */
+    display: flex;
+}
+
+.secondary-img {
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.secondary-text {
+    width: 50%;
+    z-index: 2;
+    text-align: center;
+}
+
+/* .secondary-text{
+    padding-right: 0;
+} */
+
+.secondary-title {
+    margin-bottom: 20px;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+    min-width: 480px;
+}
+
+.secondary-main {
+    margin-bottom: 20px;
+    font-size: 100%;
+    text-align: center;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+    min-width: 470px;
+}
+
+.harf {
+    float: left;
+    width: 50%;
+    height: 400px;
+    text-align : center;
+}
+
+.pc {
+    width: 80%;
+    height: auto;
+}
+
+.to-pricing {
+    color: white;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+    min-width: 470px;
+}
+
+.to-pricing:hover {
+    color: #0411FF;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+    min-width: 470px; 
+}
+
+.secondary-link {
+    text-align: center;
+}
+
+/*  tertiary-------------------------------------- */
+.tertiary {
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #101010;
+}
+
+.tertiary-area {
+    width: 65%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tertiary-title {
+    border:1px solid #999999;
+    text-align : center;
+    padding: 15px;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.tertiary-sub {
+    border:1px solid #999999;
+    text-align : center;
+    padding: 15px;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.tertiary-table {
+    display: flex;
+}
+
+.tertiary-table li {
+    width : calc(100% / 3) ;
+    border:1px solid #999999;
+}
+
+.tertiary-image {
+    text-align : center;
+    border:1px solid #999999;
+}
+
+.tertiary-img {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tertiary-button {
+    position:relative;
+    width:100%;
+    height:96px;
+    background-color:#101010;
+    border:1px solid #999999;
+}
+
+.tertiary-button .tertiary-link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align : center;
+}
+
+.tertiary-button .tertiary-link:hover {
+    color: #f6bf00;
+}
+
+.tertiary-link {
+    margin-top: 24px;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+
+.tertiary-text {
+    height: auto;
+    padding: 20px;
+    text-align : center;
+}
+
+.tertiary-main-text {
+    font-size: 16px;
+    max-height: 320px;
+    margin-bottom: 10px;
+    text-shadow: 0.5px 1px 1.5px rgba(255, 255, 255, 0.5);
+}
+
+/*  quaternary-------------------------------------- */
+
+.quaternary {
+    height: auto;
+    background-color: #f4f4f4;
+    border:1px solid #101010;
+}
+
+.quaternary-area {
+    width: 65%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align : center;
+}
+
+.quaternary-title {
+    color: #101010;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+}
+
+.quaternary-text {
+    margin-top: 30px;
+    text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.5);
+}
+
+.quaternary-main-text {
+    color: #101010;
+    text-align : center;
+    margin-bottom: 25px;
+}
+
+.quaternary-link {
+    color: #101010;
+}
+
+.quaternary-link :hover{
+    color: #f6bf00;
+}
+
+.quinary-img-right, .quinary-img-left {
+    box-shadow: 8px 8px 16px -8px #212121;
+}
+
+/*  quinary-------------------------------------- */
+
+.quinary {
+    height: auto;
+    background-color: #f4f4f4;
+    border:1px solid #101010;
+}
+
+.quinary-area {
+    width: 65%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align : center;
+}
+
+.quinary-title {
+    color: #101010;
+}
+
+.problem {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align : center;
+}
+
+.how, .difficult, .lonely {
+    text-align : center;
+}
+
+.quinary-sub {
+    color: #101010;
+}
+
+.quinary-tile-area {
+    text-align : center;
+}
+
+.quinary-tile {
+    display: flex;
+}
+
+.quinary-text-area {
+    width: 50%;
+    padding: 24px;
+}
+
+.quinary-text {
+    color: #101010;
+    font-size: 16px;
+    text-align : left;
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+.quinary-img-right {
+    width: 100%;
+}
+
+.quinary-img-left {
+    width: 100%;
+}
+
+
+.quinary-summary-text {
+    color: #101010;
+    margin-bottom: 20px;
+}
+
+.quinary-button {
+    height: auto;
+    width: auto;
+    margin-top: 16px;
+    background-color: #0411FF;
+    border-radius:15px;
+    padding: 8px;
+    box-shadow: 2px 2px 4px -2px #212121;
+}
+
+.quinary-button:hover {
+    background-color: #f6bf00;
+}
+
+/*  footer-------------------------------------- */
+
+.footer {
+    height: 400px;
+    background-color: #101010;
+    padding-top: 48px;
+}
+
+.footer-area {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-text-left {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-text-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-text-right {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-text-title {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+hr {
+    border-width: 1px 0px 0px 0px; /* 太さ */
+    border-style: solid; /* 線種 */
+    border-color: white;   /* 線色 */
+    height: 1px;         /* 高さ(※古いIE用) */
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-text-list {
+    list-style: disc;
+    margin-left: 24px;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+.footer-text-link {
+    width: 80%;
+    margin-bottom: 6px;
+}
+
+
+.copyright-area {   
+    text-align: center;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+/* レスポンシブ 1000px ---------------------------------------*/
+@media screen and (max-width: 1000px) {
+    /* header ----------------------------------------------*/
+    .header-text {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    /* header ----------------------------------------------*/
+    /* primary ---------------------------------------------*/
+    .primary {
+        width: 80%;
+    }
+    .primary-title {
+        font-size: 64px;
+    }
+    .primary-text {
+        font-size: 16px;
+    }
+    /* primary ---------------------------------------------*/
+    /* secondary -------------------------------------------*/
+    .secondary-area {
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    .secondary-img {
+        width: 100%;
+    }
+    .pc {
+        max-width: 400px;
+    }
+    .secondary-text {
+        width: 100%;
+        margin-top: 48px;
+    }
+    .secondary-title {
+        font-size: 24px;
+    }
+    .secondary-main {
+        font-size: 16px;
+    }
+    .to-pricing {
+        font-size: 18px;
+    }
+    /* secondary -------------------------------------------*/
+    /* tertiary --------------------------------------------*/
+    .tertiary-area {
+        width: 80%;
+    }
+    .tertiary-title {
+        font-size: 24px;
+    }
+    .tertiary-sub {
+        font-size: 20px;
+    }
+    .tertiary-table {
+        display: block;
+    }
+    .tertiary-table li {
+        width: 100%;
+        text-align: center;
+    }
+    /* tertiary --------------------------------------------*/
+    /* quaternary ------------------------------------------*/
+    .quaternary-area {
+        width: 85%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align : center;
+    }
+    .quaternary-title {
+        font-size: 32px;
+    }
+    .quaternary-main-text {
+        font-size: 16px;
+    }
+    /* quaternary ------------------------------------------*/
+    /* quinary ---------------------------------------------*/
+    .quinary-area {
+        width: 85%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align : center;
+    }
+    .quinary-sub {
+        background-color: rgb(33, 33, 33, 0.5);
+        color: white;
+        text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.8);
+        font-size: 24px;
+    }
+    .quinary-tile {
+        text-align: center;
+        display: block;
+    }
+    .quinary-text-area {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* quinary ---------------------------------------------*/
+    /* footer ----------------------------------------------*/
+    .footer-area {
+        width: 85%;
+    }
+    /* footer ----------------------------------------------*/
+
+    /*------------------------------
+
+    ここから下がハンバーガーメニュー
+    に関するCSS
+
+    ------------------------------*/
+
+    /* チェックボックスは非表示に */
+    .drawer {
+        display: block;
+    }
+
+    .drawer-title {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 64px;
+        text-shadow: 0.5px 1px 1.5px rgba(33, 33, 33, 0.8);
+    }
+
+    .drawer-menu {
+        /* display: flex; */
+        text-align: center;
+        margin-top: 32px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+    }
+
+    .drawer-harf {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .drawer-section {
+        
+    }
+    
+    .drawer-list {
+        padding-bottom: 24px;
+    }
+
+    .drawer-text {
+        font-size: 24px;
+    }
+    
+    .drawer-text {
+        text-shadow: 1px 2px 3px rgb(33, 33, 33, 0.9);
+    }
+    
+    .drawer-text:hover {
+        color: #0411FF;
+    }
+    
+    .drawer-sub {
+        font-size: 16px;
+    }
+
+    .drawer-hidden {
+    display: none;
+    }
+    
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+    }
+    
+    /* ハンバーガーメニューのアイコン */
+    .drawer-open span,
+    .drawer-open span:before,
+    .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+    }
+    
+    /* 三本線のうち一番上の棒の位置調整 */
+    .drawer-open span:before {
+    bottom: 8px;
+    }
+    
+    /* 三本線のうち一番下の棒の位置調整 */
+    .drawer-open span:after {
+    top: 8px;
+    }
+    
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+    }
+    
+    /* アイコンがクリックされたらアイコンが×印になるように上下の線を回転 */
+    #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    }
+    
+    #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    }
+    
+    /* メニューのデザイン*/
+    .drawer-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    /* background-color: rgb(33, 33, 33, 0.9); */
+    background: rgba(246, 191, 0, 0.9);
+    transition: .5s;
+    }
+    
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
+    }
+}
+/* レスポンシブ 1000px ---------------------------------------*/
+
+
+/* レスポンシブ 600px ----------------------------------------*/
+@media screen and (max-width: 600px) {
+    /* header ----------------------------------------------*/
+    .header-menu {
+        margin: 0;
+        display: none;
+    }
+    .drawer {
+        margin-right: 8px;
+        margin-left: auto;
+    }
+    /* header ----------------------------------------------*/
+    /* primary ---------------------------------------------*/
+    .primary {
+    width: 90%;
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    color: white;
+    }
+    .primary-area {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .primary-title {
+        margin-top: 48px;
+        font-size: 32px;
+    }
+    .primary-text {
+        margin-top: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        /* text-shadow: 0.5px 1px 1.5px rgb(182, 182, 182, 0.5); */
+    }
+    .to-prospect {
+        margin-top: 24px;
+        font-size: 24px;
+    }
+    .primary-button {
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+    /* primary ---------------------------------------------*/
+    /* secondary -------------------------------------------*/
+    .secondary-area {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .pc {
+        width: 100%;
+    }
+    .secondary-title {
+        font-size: 20px;
+        min-width: auto;
+    }
+    .secondary-main {
+        min-width: auto;
+    }
+    .to-pricing {
+        min-width: auto;
+    }
+    /* secondary -------------------------------------------*/
+    /* tertiary --------------------------------------------*/
+    .tertiary-table {
+        display: flex;
+    }
+    /* tertiary --------------------------------------------*/
+    /* quaternary ------------------------------------------*/
+    /* quaternary ------------------------------------------*/
+    /* quinary ---------------------------------------------*/
+    /* quinary ---------------------------------------------*/
+    /* footer ----------------------------------------------*/
+    /* footer ----------------------------------------------*/
+}
+/* レスポンシブ 600px ----------------------------------------*/
